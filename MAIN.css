@@ -1,0 +1,96 @@
+.tabs {
+font-size: 0;
+}
+
+.tabs>input[type="radio"] {
+display: none;
+}
+
+.tabs>div {
+/* скрыть контент по умолчанию */
+display: none;
+border: 1px solid #ffffff;
+padding: 10px 15px;
+font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#home,
+#tab-btn-2:checked~#contacts,
+#tab-btn-3:checked~#aboutme {
+display: block;
+
+
+}
+
+.tabs>label {
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+background-color: #f5f5f5;
+border: 1px solid #e0e0e0;
+padding: 2px 8px;
+font-size: 16px;
+line-height: 1.5;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+cursor: pointer;
+position: relative;
+top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+background-color: #fff;
+border-bottom: 1px solid #fff;
+}
+
+/*my styles */
+
+.photo {
+  border: 4mm ridge rgb(255, 200, 18);
+  width: 500px;
+  height: 500px;
+  float: left;
+  margin: 20px;
+}
+
+.about { 
+  padding: 20px; /* Поля */
+  background: #ffca56 ; /* Цвет фона */
+  border: 1px solid #000; /* Параметры рамки */
+  font: 1.2em "Ubuntu", regular;
+  text-align: right;
+  margin: 20px;
+  width: 500px;
+  float: right;
+}
+
+.aboutme { 
+  padding: 20px; /* Поля */
+  background: #ffca56 ; /* Цвет фона */
+  border: 30px solid #000; /* Параметры рамки */
+  font: 1.2em "Monaco", regular;
+  text-align: left;
+  margin: 20px;
+  width: 1200px;
+  float: center;
+}
+
+.aboutMeTitle {
+  font: 2.0em "Limelight", regular;
+  text-align: center;
+}
+
+.basement {
+  position: fixed; /* Фиксированное положение */
+  left: 0; bottom: 0; /* Левый нижний угол */
+  padding: 0px; /* Поля вокруг текста */
+  background: #a89e9e; /* Цвет фона */
+  color: rgb(29, 28, 28); /* Цвет текста */
+  width: 100%; /* Ширина слоя */
+  font: 1.3em "Roboto", regular;
+}
